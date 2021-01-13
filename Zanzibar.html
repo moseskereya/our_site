@@ -6,8 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Website</title>
+    <title> Kilimangeti Tanzania Safari</title>
     <link rel="stylesheet" href="./assets/css/style-freedom.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -54,11 +56,8 @@
         ga('require', 'urlChangeTracker');
         ga('send', 'pageview');
     </script>
-    <script async src='../../../../../../js/autotrack.js'></script>
     <meta name="robots" content="noindex">
-
     <body>
-        <link rel="stylesheet" href="../../../../../../images/website.css">
         <!-- header -->
         <div class="w3l-headers-9">
             <header>
@@ -80,7 +79,6 @@
                                 <ul class="menu">
                                     <li><a href="index.html" class="link-nav">Home</a></li>
                                     <li><a href="about.html" class="link-nav">About</a></li>
-                                    <li><a href="services.html">Services</a></li>
                                     <li>
                                         <!-- First Tier Drop Down -->
                                         <label for="drop-2" class="toggle toogle-2">Safaris <span
@@ -103,6 +101,7 @@
                                         <ul>
                                             <li><a href="kilimanjaro.html"> Mount Kilimanjaro</a></li>
                                             <li><a href="meruclimb.html">Mount Meru </a></li>
+                                            <li><a href="whatforkili.html">What for Kili </a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -112,9 +111,9 @@
                                                 class="fa fa-angle-down" aria-hidden="true"></span></a>
                                         <input type="checkbox" id="drop-4" />
                                         <ul>
-                                            <li><a href="Kili-what to know.html">Day Tour</a></li>
-                                            <li><a href="Kili-what to know-single.html">Cycling Tour </a></li>
-                                            <li><a href="Kili-what to know-cart.html">Maasai Cultural Tour</a></li>
+                                            <li><a href="./assets/parks/daytour.html">Day Tour</a></li>
+                                            <li><a href="./assets/parks/cycling.html">Cycling Tour </a></li>
+                                            <li><a href="Maasai.html">Maasai Cultural Tour</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="contact.html" class="link-nav">Contact</a></li>
@@ -164,7 +163,7 @@
                                 its excellent beaches to the north
                                 and those to the south around Ushongo.</p>
                         </div>
-                        <div class="gd-innf">
+                        <div class="gd-innf" data-aos="fade-up">
                             <a href="./assets/parks/z2.html">
                                 <img class="img-responsive" src="assets/parks/images/z8.jpg" alt="image"></a>
                             <h3>Private stay at Milele Villas</a>
@@ -177,7 +176,7 @@
                                 few among many activities you can
                                 enjoy during your stay.</p>
                         </div>
-                        <div class="gd-innf">
+                        <div class="gd-innf" data-aos="zoom-in">
                             <a href="./assets/parks/z3.html">
                                 <img class="img-responsive" src="assets/parks/images/z3.jpg" alt="image"></a>
                             <h3>Stay at Diamonds Mapenzi Beach</h3>
@@ -203,7 +202,7 @@
                                 nestled in lush, natural
                                 surroundings and all have views of the gardens or the bay</p>
                         </div>
-                        <div class="gd-innf">
+                        <div class="gd-innf" data-aos="fade-up">
                             <a href="./assets/parks/z5.html">
                                 <img class="img-responsive" src="assets/parks/images/z5.jpg" alt="image"></a>
                             <h3>Beach holiday in Zanzibar</h3>
@@ -227,7 +226,8 @@
                         <h4 class="cal-action-text-29">
                             <a href="book.html">Buy a Tour Without Leaving Your Home</a>
                         </h4>
-                        <p class="sub-paragraph actioncall-29">Using our website, you can easily find and book any tour
+                        <p class="sub-paragraph actioncall-29">Using our Kilimangeti Tanzania Safari, you can easily
+                            find and book any tour
                             you
                             want. Mobile users will definitely enjoy our app available on all devices.</p>
                         <a href="book.html" class="buttonbg">Book Now</a>
@@ -309,6 +309,7 @@
                     document.body.scrollTop = 0;
                     document.documentElement.scrollTop = 0;
                 }
+                AOS.init();
             </script>
             <!-- //move top -->
         </section>

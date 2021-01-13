@@ -1,17 +1,92 @@
+ * {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
  html {
   scroll-behavior: smooth;
 }
 
-body,
-html {
-  margin: 0;
-  padding: 0;
-  color: #555A64;
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+/*Global styles*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+:root{
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #c59d5f;
+    --body-font-color: #515151;
+}
+html{
+    font-family:var(--body-font);
+    font-size:16px ;
+    color: var(--body-font-color);
+    scroll-behavior: smooth;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+body a {
+    text-decoration: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    color: #3B5266;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="text"],
+input[type="email"],
+input[type="search"] {
+transition: 0.5s all;
+-webkit-transition: 0.5s all;
+-moz-transition: 0.5s all;
+-o-transition: 0.5s all;
+-ms-transition: 0.5s all;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 600;
+    color: #777;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 0.9em;
+    color: #777;
+    line-height: 1.9em;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+ul li a{
+    font-size: 0.9em;
+    color: #777;
+    line-height: 1.9em;
+    letter-spacing: 1px;
+    margin-bottom: 0;
 }
 
 .main h3{
@@ -26,13 +101,23 @@ text-transform: uppercase;
 color: #2c3e50;
 }
 .main h5{
-    margin: 1rem 0;
-    color: #2c3e50;
-    font-size: medium;
+margin: 1rem 0;
+color: #2c3e50;
+font-size: medium;
 }
 .wrapper {
   width: 75%;
   margin: 0 auto;
+}
+
+.title-main{
+ margin: 3rem 2rem;
+ color: #2c3e50;
+}
+
+.popular{
+margin: 3rem 0;
+color: #2c3e50;
 }
 .zanzibar{
 display: flex;
@@ -128,6 +213,57 @@ font-size: 14px;
 .toogle_btn{
     margin: 0 3rem ;
 }
+.row_day{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+.col-1{
+    flex: 2;
+    margin: 0 .5rem;
+}
+.col-1 img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.col-2 img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.col-2{
+    flex: 1;
+    margin: 0 .5rem;
+}
+.maasai{
+    padding: 1rem;
+    background-color: rgb(230, 230, 230);
+}
+.maasai_contents{
+display: flex;
+justify-content: space-around;
+}
+.maasai_content1{
+    flex: 2;
+    margin: 1.2rem;
+}
+.maasai_content2{
+    flex: 1;
+    margin: 1.2rem;
+}
+.maasai_content1 h4{
+    padding: 3rem 0;
+    text-transform: uppercase;
+}
+.slider ul li img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+.maasai_content1 p{
+    margin: 1rem 0;
+}
 
 @media all and (max-width: 768px) {
 .zanzibar{
@@ -137,13 +273,28 @@ font-size: 14px;
     margin: .5rem;
     width: 90%;
   }
+.header h1 a{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 2px;
+}
 .d-flex{
     flex-direction: column;
 }
-
+.row_day{
+    flex-direction: column;
 }
+}
+
+@media all and (max-width: 1029px) {
+    .maasai_contents{
+        flex-direction: column;
+    }
+}
+
 .gd-innf h3{
     margin: 1.4rem 0;
+
 }
 .carousel-item{
     height: 70vh;
@@ -181,6 +332,7 @@ font-size: 14px;
 .wrapper-full {
   width: 90%;
   margin: 0 auto;
+  padding:5rem 0;
 }
 
 @media all and (max-width: 641px) {
@@ -313,6 +465,7 @@ h3.title-main {
 h3.title-white {
   color: #fff;
 }
+
 
 p.sub-title {
   color: #555A64;
@@ -1254,7 +1407,7 @@ a.button-dark {
 }
 /* sliders */
 .w3l-covers-9-main .csslider>ul>li:first-child {
-  background: url(../images/da2.jpg) no-repeat center;
+  background: url(../parks/images/pa1.jpg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1263,7 +1416,7 @@ a.button-dark {
 }
 
 .w3l-covers-9-main .csslider>ul>li:nth-child(2) {
-  background: url(../parks/images/ba8.jpg) no-repeat center;
+  background: url(../parks/images/da5.jpg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2059,16 +2212,24 @@ a.button-dark {
 }
 
 .w3l-call-to-action-29 .cal-action-29 {
-  background: url(../images/bg1.jpg) no-repeat center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
   padding: 80px 0;
+  background-color: #979797;
   position: relative;
   z-index: 0;
 }
+.w3l-call-to-action-29 .cal-action-29 p {
+    color: rgb(190, 184, 184);
+}
+.w3l-call-to-action-29 .cal-action-29 h4{
+    color: rgb(190, 184, 184);
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+.cards{
+    width: 80px;
+    height: 80px;
+}
+
 
 .w3l-call-to-action-29 .cal-action-29:before {
   content: "";
