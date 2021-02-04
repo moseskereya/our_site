@@ -1,3 +1,12 @@
+// Preloader
+$(window).on('load', function () {
+    if ($('#preloader').length) {
+        $('#preloader').delay(150).fadeOut('slow', function () {
+            $(this).remove();
+        });
+    }
+});
+
 $('#contact-us-form').submit(function (e) {
     e.preventDefault();
     $("#response").fadeIn();

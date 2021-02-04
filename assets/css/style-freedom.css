@@ -34,6 +34,30 @@ html{
     scroll-behavior: smooth;
 }
 
+
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preload_text{
+    margin-top: 2rem;
+    color: #ffffff;
+    font-size: medium;
+    font-family: var(--main-font);
+}
 body a {
     text-decoration: none;
     transition: 0.5s all;
@@ -5383,6 +5407,9 @@ a.button-dark {
 .w3l-text-9 .grid-col-4 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.north_title_paragraph{
+    margin: 3rem 0;
+}
 
 .w3l-text-9 a.action {
   border: none;
@@ -5424,6 +5451,11 @@ a.button-dark {
   color: #555A64;
   margin-top: 6px;
   display: inline-block;
+}
+.gd-innf h3{
+    color:var(--secondary-font-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
 }
 
 .w3l-text-9 .left-w3l-text-9 img {
@@ -5542,6 +5574,9 @@ a.button-dark {
   .w3l-text-9 h4.text-head-w3l-text-9 {
     font-size: 42px;
     line-height: 46px;
+  }
+  #preloader img{
+      width: 80%;
   }
 
   .w3l-text-9 h5.sub-head-w3l-text-9 {
@@ -8798,6 +8833,51 @@ table.scale {
   }
 }
 
+
+.north_parks{
+    display: flex;
+    justify-content: center;
+}
+
+.north_park_content{
+    margin: 0 .6rem;
+}
+.north_park_content h4{
+    font-family: var(--main-font);
+    font-size: large;
+    font-weight: 100;
+    color:var(--secondary-font-color);
+    margin: 1.2rem 0;
+}
+.north_park_content img{
+    margin: .4rem .5rem;
+}
+.north_park_content button{
+    padding: 7px 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -11831,4 +11911,3 @@ table.scale {
   clip: auto;
 }
 
-/*# sourceMappingURL=main.css.css.map */
