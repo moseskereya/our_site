@@ -5453,8 +5453,9 @@ a.button-dark {
   display: inline-block;
 }
 .gd-innf h3{
-    color:var(--secondary-font-color);
+    color:var(--main-font-color-dark);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
     font-size: 18px;
 }
 
